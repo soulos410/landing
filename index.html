@@ -8,13 +8,13 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="game__header">
+    <header class="game__header" id="header">
         <nav class="header__navigation">
-            <div class="header__logo-wrapper"><h1><a href="#" class="logo-wrapper__logo-link">Console.log debugger</a></h1></div>
+            <div class="header__logo-wrapper"><h1><a href="#header" class="logo-wrapper__logo-link">Console.log debugger</a></h1></div>
             <ul class="navigation__links-list">
-                <li class="links-list__link"><a href="#" class="link__current-link">About</a></li>
-                <li class="links-list__link"><a href="#" class="link__current-link">Screenshots</a></li>
-                <li class="links-list__link"><a href="#" class="link__current-link">Developers</a></li>
+                <li class="links-list__link"><a href="#about" class="link__current-link">About</a></li>
+                <li class="links-list__link"><a href="#screenshots" class="link__current-link">Screenshots</a></li>
+                <li class="links-list__link"><a href="#developers" class="link__current-link">Developers</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +22,7 @@
         <p class="promo__description">Intellimagic</p>
         <button class="promo__play-btn">Play</button>
     </div>
-    <div class="game__about">
+    <div class="game__about" id="about">
         <div class="about__heading-wrapper"><h2 class="about__heading">About</h2></div>
         <div class="about__description-wrapper">
             <div class="about__goal">
@@ -35,11 +35,11 @@
             </div>
         </div>
     </div>
-    <div class="game__screenshots">
+    <div class="game__screenshots" id="screenshots">
         <div class="screenshots__heading-wrapper"><h2 class="screenshots__heading">Screenshots</h2></div>
     </div>
-    <div class="game__developers">
-        <div class="developers__heading-wrapper"><h2 class="developers__heading">Developers</h2></div>
+    <div class="game__developers" id="developers">
+        <div class="developers__heading-wrapper" id="developers"><h2 class="developers__heading">Developers</h2></div>
         <div class="developers__developer-wrapper">
             <div class="developers__current">
                 <img class="developer__photo" src="./img/dev1.jpg">
@@ -55,5 +55,7 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
