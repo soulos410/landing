@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.game__header{
+    background-color: #000000;
+}
+.game__about,.game__promo,.game__developers,.game__screenshots{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header__navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.navigation__links-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo-wrapper {
+    display: flex;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 20px;
+}
+.logo-wrapper__logo-link{
+    margin: 0 0 0 45px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.links-list__link{
+    display: flex;
+    font-family: 'Josefin', sans-serif;
+    font-size: 20px;
+    margin: 0 25px 0 0;
+}
+.link__current-link{
+    text-transform: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+.game__promo {
+    display: flex;
+    height: 630px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+.promo__description{
+    font-family: 'Josefin', sans-serif;
+    font-size: 54px;
+    margin: 180px 0 0;
+}
+.promo__play-btn {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+    background-color: #352925;
+    margin: 20px 0 0 0;
+    border-radius: 1%;
+    color: white;
+    opacity: 1;
+    transition: 0.3s;
+    font-size: 18px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.promo__play-btn:active{
+    box-shadow: none;
+}
+.promo__play-btn:hover {
+    opacity: 0.85;
+}
+.game__about{
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E7E7E7;
+}
+.about__goal,.about__technologies{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+}
+.about__heading-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+.about__ico{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.about__heading{
+    display: flex;
+    font-size: 36px;
+}
+.about__description-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.goal__description,.technologies__description{
+    display: flex;
+    font-family: 'Josefin', sans-serif;
+    font-size: 18px;
+}
+.game__screenshots{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+.screenshots__heading-wrapper {
+    margin: 60px 0 0;
+    font-size: 24px;
+}
+.game__developers {
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    background-color: #E7E7E7;
+}
+.developer__photo{
+    display: flex;
+    border-radius: 50%;
+    width: 210px;
+    height: 180px;
+}
+.developers__heading-wrapper {
+    display: flex;
+    font-size: 24px;
+    margin: 50px 0 0;
+    justify-content: center;
+}
+.developers__developer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0 0;
+}
+.developer__name{
+    margin: 15px 0 0 0;
+    font-weight: bold;
+}
+.developer__name, .developer__about {
+    display: flex;
+    width: 200px;
+    font-family: 'Josefin', sans-serif;
+    margin: 5px 0 5px 0;
+    justify-content: center;
+}
+.developer__description {
+    font-family: 'Josefin', sans-serif;
+    width: 216px;
+    text-align: center;
+}
