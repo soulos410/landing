@@ -10,7 +10,7 @@
 <body>
     <header class="game__header" id="header">
         <nav class="header__navigation">
-            <div class="header__logo-wrapper"><h1><a href="#header" class="logo-wrapper__logo-link">Console.log debugger</a></h1></div>
+            <div class="header__logo-wrapper"><h1><a href="#header" class="logo-wrapper__logo-link">Console.log debuggers</a></h1></div>
             <ul class="navigation__links-list">
                 <li class="links-list__link"><a href="#about" class="link__current-link">About</a></li>
                 <li class="links-list__link"><a href="#screenshots" class="link__current-link">Screenshots</a></li>
@@ -20,7 +20,7 @@
     </header>
     <div class="game__promo">
         <p class="promo__description">Intellimagic</p>
-        <button class="promo__play-btn">Play</button>
+        <a class="promo__play-btn" href="https://philipokthecat.github.io/intellimagic-game/">Play</a>
     </div>
     <div class="game__about" id="about">
         <div class="about__heading-wrapper"><h2 class="about__heading">About</h2></div>
@@ -37,18 +37,26 @@
     </div>
     <div class="game__screenshots" id="screenshots">
         <div class="screenshots__heading-wrapper"><h2 class="screenshots__heading">Screenshots</h2></div>
+        <button class="screenshots__previous-image">❮</button>
+        <div class="screenshots__slider-wrapper">
+            <img src="./img/game-menu.jpg" alt="Game-menu" class="screenshots__slider-image">
+            <img src="./img/choose-character.jpg" alt="Character-choosing" class="screenshots__slider-image">
+            <img src="./img/spellbook.jpg" alt="Spellbook" class="screenshots__slider-image">
+            <img src="./img/end-game.jpg" alt="Scroreboard" class="screenshots__slider-image">
+        </div>
+        <button class="screenshots__next-image">❯</button>
     </div>
     <div class="game__developers" id="developers">
         <div class="developers__heading-wrapper" id="developers"><h2 class="developers__heading">Developers</h2></div>
         <div class="developers__developer-wrapper">
             <div class="developers__current">
-                <img class="developer__photo" src="./img/dev1.jpg">
+                <img class="developer__photo" src="./img/dev1.jpg" alt="Anton Filipovich">
                 <p class="developer__name">Anton Filipovich</p>
                 <p class="developer__about">Frontend developer</p>
                 <p class="developer__description">Visual part of game, Leveling system, Skills logic.</p>
             </div>
             <div class="developers__current">
-                <img class="developer__photo" src="./img/dev2.jpg">
+                <img class="developer__photo" src="./img/dev2.jpg" alt="Siarhei Lisiunin">
                 <p class="developer__name">Siarhei Lisiunin</p>
                 <p class="developer__about">Frontend developer</p>
                 <p class="developer__description">Landing page, Texture search, Modal window.</p>

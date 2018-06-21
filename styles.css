@@ -27,6 +27,7 @@
     width: 100%;
     justify-content: space-around;
     background-color: #000000;
+    z-index: 10;
 }
 .navigation__links-list{
     display: flex;
@@ -73,29 +74,31 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.promo__description{
+.promo__description {
     margin: 260px 0 0;
     font-family: 'Exo', sans-serif;
-    font-size: 54px;
+    font-size: 80px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #642C00;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 .promo__play-btn {
     display: flex;
-    width: 150px;
     height: 40px;
-    align-content: center;
     justify-content: center;
+    text-align: center;
     background-color: #352925;
     margin: 20px 0 0 0;
+    padding: 10px 75px 0;
     border-radius: 1%;
     color: white;
     opacity: 1;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    box-shadow: 2px 13px 12px 0 rgba(0,0,0,0.64), 0 20px 50px 0 rgba(0,0,0,0.1);
 }
 .promo__play-btn:active{
     box-shadow: none;
@@ -143,7 +146,8 @@
 }
 .game__screenshots{
     display: flex;
-    height: 450px;
+    position: relative;
+    height: 700px;
     flex-direction: column;
     align-items: center;
     background-color: #F8F8F8;
@@ -151,6 +155,44 @@
 .screenshots__heading-wrapper {
     margin: 60px 0 0;
     font-size: 24px;
+}
+.screenshots__slider-wrapper{
+    display: flex;
+    width: 1000px;
+    height: 535px;
+    background-size: cover;
+    overflow: hidden;
+    margin: 15px 0 0;
+    border: 2px solid black;
+}
+.screenshots__slider-image{
+    width: 100%;
+}
+.screenshots__previous-image{
+    left: 50px;
+}
+.screenshots__next-image{
+    right: 50px;
+}
+.screenshots__previous-image,.screenshots__next-image{
+    position: absolute;
+    padding: 10px 19px;
+    font-size: 20px;
+    top: 360px;
+    background-color: #352925;
+    border-radius: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 2px 5px 5px 0 rgba(0,0,0,0.64), 0 20px 15px 0 rgba(0,0,0,0.1);
+    color: #F8F8F8;
+    border: none;
+}
+.screenshots__previous-image:hover,.screenshots__next-image:hover{
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in;
+}
+.screenshots__previous-image:active,.screenshots__next-image:active{
+    box-shadow: 0px 3px 1px 0 rgba(0,0,0,0.64), 0 5px 5px 0 rgba(0,0,0,0.1);
 }
 .game__developers {
     display: flex;
